@@ -2,188 +2,225 @@
 <html>
 	<head>
 		<title>Bad Gateway</title>
-		<style type="text/css">
-			* {
-				margin: 0;
-				padding: 0;
-			}
+		<style type="text/css">* {
+	margin: 0;
+	padding: 0;
+}
 
-			html, body {
-				min-height: 100%;
-			}
+html, body {
+	min-height: 100%;
+}
 
-			body {
-				position:relative;
-				font-size: 11px;
-				font-family: Verdana, sans-serif;
-				background: #0a2b4f; /* Old browsers */
-				background: -moz-linear-gradient(top, #0a2b4f 0%, #539ab8 100%); /* FF3.6+ */
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0a2b4f), color-stop(100%,#539ab8)); /* Chrome,Safari4+ */
-				background: -webkit-linear-gradient(top, #0a2b4f 0%,#539ab8 100%); /* Chrome10+,Safari5.1+ */
-				background: -o-linear-gradient(top, #0a2b4f 0%,#539ab8 100%); /* Opera 11.10+ */
-				background: -ms-linear-gradient(top, #0a2b4f 0%,#539ab8 100%); /* IE10+ */
-				background: linear-gradient(to bottom, #0a2b4f 0%,#539ab8 100%); /* W3C */
-			}
+body {
+	position:relative;
+	font-size: 11px;
+	font-family: Verdana, sans-serif;
+	background: #0a2b4f; /* Old browsers */
+	background: -moz-linear-gradient(top, #0a2b4f 0%, #539ab8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0a2b4f), color-stop(100%,#539ab8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #0a2b4f 0%,#539ab8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #0a2b4f 0%,#539ab8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #0a2b4f 0%,#539ab8 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #0a2b4f 0%,#539ab8 100%); /* W3C */
+}
 
-			a {
-				color:#333;
-			}
+a {
+	color:#333;
+}
 
-			.errorBody {
-				min-height:780px;
-				padding-top: 120px;
-			}
+.errorBody {
+	min-height:780px;
+	padding-top: 120px;
+}
 
-			.errorBox {
-				color: #333;
-				position: relative;
+.errorBox {
+	color: #333;
+	position: relative;
 
-				margin-left:auto;
-				margin-right:auto;
+	margin-left:auto;
+	margin-right:auto;
 
-				width: 880px;
-				height: 300px;
-				padding: 40px;
+	width: 880px;
+	height: 300px;
+	padding: 40px;
 
-				background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(255, 255, 255, 0.9);
 
-				border-radius: 15px;
-				box-shadow: 3px 3px 10px #333;
-			}
+	border-radius: 15px;
+	box-shadow: 3px 3px 10px #333;
+}
 
-			.statusCode,
-			.statusText {
-				width: 320px;
-				text-align: center;
-				background-color: #000;
-				color: transparent;
-				text-shadow: 0 2px 3px rgba(255, 255, 255, 0.3);
-				-webkit-background-clip: text;
-				-moz-background-clip: text;
-				background-clip: text;
-			}
+.statusCode,
+.statusText {
+	width: 320px;
+	text-align: center;
+	background-color: #000;
+	color: transparent;
+	text-shadow: 0 2px 3px rgba(255, 255, 255, 0.3);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+}
 
-			.statusCode {
-				margin-top: 40px;
-				font-size: 148px;
-				font-weight: bold;
-			}
+.statusCode {
+	margin-top: 40px;
+	font-size: 148px;
+	font-weight: bold;
+}
 
-			.statusText {
-				font-size: 24px;
-			}
+.statusText {
+	font-size: 24px;
+}
 
-			.errorDescription {
-				position: absolute;
-				top: 40px;
-				right: 40px;
-				width: 490px;
-				height: 300px;
-				padding-left:30px;
-				border-left: 1px solid #e0e0e0;
-			}
+.errorDescription {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	width: 490px;
+	height: 300px;
+	padding-left:30px;
+	border-left: 1px solid #e0e0e0;
+}
 
-			.todo {
-				position:absolute;
-				bottom:0;
-				width:490px;
-			}
+.todo {
+	position:absolute;
+	bottom:0;
+	width:490px;
+}
 
-			@media (max-width: 900px) {
-				.errorBody {
-					padding-top:0;
-				}
+@media (max-width: 900px) {
+	.errorBody {
+		padding-top:0;
+	}
 
-				.errorBox {
-					width:auto;
-					height:auto;
-					margin:10px;
-				}
+	.errorBox {
+		width:auto;
+		height:auto;
+		margin:10px;
+	}
 
-				.statusCode {
-					margin-top: 0;
-				}
+	.statusCode {
+		margin-top: 0;
+	}
 
-				.statusCode,
-				.statusText {
-					width:auto;
-					text-align:center;
-				}
+	.statusCode,
+	.statusText {
+		width:auto;
+		text-align:center;
+	}
 
-				.errorDescription {
-					position:relative;
-					top:inherit;
-					right:inherit;
-					width:auto;
-					height:auto;
-					padding-left:0;
-					border-left:0;
-				}
+	.errorDescription {
+		position:relative;
+		top:inherit;
+		right:inherit;
+		width:auto;
+		height:auto;
+		padding-left:0;
+		border-left:0;
+	}
 
-				.todo {
-					position:relative;
-					width:auto;
-					bottom:inherit;
-				}
+	.todo {
+		position:relative;
+		width:auto;
+		bottom:inherit;
+	}
 
-				.description {
-					margin-top:16px;
-					height:auto !important;
-				}
+	.description {
+		margin-top:16px;
+		height:auto !important;
+	}
 
-				h2 {
-					margin-top:16px;
-				}
-			}
+	h2 {
+		margin-top:16px;
+	}
+}
 
-			.description {
-				line-height:16px;
-				height:100px;
-			}
+.description {
+	line-height:16px;
+	height:100px;
+}
 
-			h2 {
-				font-size:11px;
-				margin-bottom:20px;
-			}
+h1.title {
+	display:none;
+}
 
-			.links ul li {
-				float:left;
-				line-height:27px;
-				margin-right:20px;
-				margin-bottom:-1px;
-				height:27px;
-				width:220px;
-				border-top:1px solid #b3c6cc;;
-				border-bottom:1px solid #b3c6cc;;
-				list-style-type:none;
-			}
+h2 {
+	font-size:11px;
+	margin-bottom:20px;
+}
 
-			.links ul li:before{
-				content: "\00BB\00A0";
-			}
+.links ul li {
+	float:left;
+	line-height:27px;
+	margin-right:20px;
+	margin-bottom:-1px;
+	height:27px;
+	width:220px;
+	border-top:1px solid #b3c6cc;;
+	border-bottom:1px solid #b3c6cc;;
+	list-style-type:none;
+}
 
-			.links ul li a {
-				text-decoration:none;
-				color:#333;
-			}
+.links ul li:before{
+	content: "\00BB\00A0";
+}
 
-			.links ul li a:hover {
-				text-decoration:underline;
-			}
+.links ul li a {
+	text-decoration:none;
+	color:#333;
+}
 
-			.tips ul li {
-				line-height:27px;
-				margin-right:20px;
-				margin-bottom:-1px;
-				border-top:1px solid #b3c6cc;;
-				border-bottom:1px solid #b3c6cc;;
-				list-style-type:none;
-			}
+.links ul li a:hover {
+	text-decoration:underline;
+}
 
-			.tips ul li:before{
-				content: "\00BB\00A0";
-			}
-		</style>
+.tips ul li {
+	line-height:27px;
+	margin-right:20px;
+	margin-bottom:-1px;
+	border-top:1px solid #b3c6cc;;
+	border-bottom:1px solid #b3c6cc;;
+	list-style-type:none;
+}
+
+.tips ul li:before{
+	content: "\00BB\00A0";
+}
+
+.de, .hu {
+	display:none;
+}
+
+#locale-flags {
+	display:none;
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+
+.locale-en .en {
+	display:inline;
+}
+.locale-en .de,
+.locale-en .hu {
+	display:none;
+}
+
+.locale-de .de {
+	display:inline;
+}
+.locale-de .en,
+.locale-de .hu {
+	display:none;
+}
+
+.locale-hu .hu {
+	display:inline;
+}
+.locale-hu .en,
+.locale-hu .de {
+	display:none;
+}</style>
 	</head>
 	<body>
 		<div class="errorBody">
@@ -208,5 +245,52 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript">var languages = ['en', 'de', 'hu'];
+
+function switchLanguage(language) {
+	if (languages.indexOf(language) !== false) {
+		document.documentElement.className = 'locale-' + language;
+		document.title = document.getElementById('title-' + language).innerHTML;
+	}
+}
+
+function getLanguageEventHandler(language) {
+	return function (e) {
+		var event;
+		if (!e) {
+			event = window.event;
+		} else {
+			event = e;
+		}
+
+		event.stopPropagation();
+		event.preventDefault();
+
+		switchLanguage(language);
+	}
+}
+
+function showFlags() {
+	if (document.getElementById('locale-flags')) {
+		document.getElementById('locale-flags').style.display='block';
+		for (var i=0; i<languages.length;i++) {
+			var handler = getLanguageEventHandler(languages[i]);
+			var element = document.getElementById('set-locale-' + languages[i])
+
+			if (element.addEventListener) {
+				element.addEventListener('click', handler, false);
+			} else if (element.attachEvent) {
+				element.attachEvent('onclick', handler);
+			}
+		}
+	}
+}
+
+if (navigator.language !== undefined) {
+	var locale = navigator.language.split('-')[0];
+	switchLanguage(locale);
+	showFlags()
+}
+</script>
 	</body>
 </html>

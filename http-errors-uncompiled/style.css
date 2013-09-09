@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Request Timeout</title>
-		<style type="text/css">* {
+* {
 	margin: 0;
 	padding: 0;
 }
@@ -220,80 +216,4 @@ h2 {
 .locale-hu .en,
 .locale-hu .de {
 	display:none;
-}</style>
-	</head>
-	<body>
-		<div class="errorBody">
-			<div class="errorBox">
-				<div class="errorData">
-					<div class="statusCode">408</div>
-					<div class="statusText">Too slow, sorry</div>
-				</div>
-				<div class="errorDescription">
-					<div class="description">
-						Your browser took <strong>too long</strong> to send your request. Please see the list below
-						to resolve your issue.
-					</div>
-					<div class="tips todo">
-						<h2>Please follow these steps to get back on track:</h2>
-						<ul>
-							<li>Check your <a href="http://www.speedtest.net/">Internet Connection speed</a>.</li>
-							<li>Contact your internet provider and ask if they are performing maintenance.</li>
-							<li><a href="" onclick="javascript:window.location.reload();return false;">Refresh this page</a>.</li>
-							<li><a href="/" onclick="window.history.back();return false;">Go back</a> and try again.</li>
-							<li>Go to our <a href="/">Homepage</a> and try again from there.</li>
-							<li>Try again at a later time.</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script type="text/javascript">var languages = ['en', 'de', 'hu'];
-
-function switchLanguage(language) {
-	if (languages.indexOf(language) !== false) {
-		document.documentElement.className = 'locale-' + language;
-		document.title = document.getElementById('title-' + language).innerHTML;
-	}
 }
-
-function getLanguageEventHandler(language) {
-	return function (e) {
-		var event;
-		if (!e) {
-			event = window.event;
-		} else {
-			event = e;
-		}
-
-		event.stopPropagation();
-		event.preventDefault();
-
-		switchLanguage(language);
-	}
-}
-
-function showFlags() {
-	if (document.getElementById('locale-flags')) {
-		document.getElementById('locale-flags').style.display='block';
-		for (var i=0; i<languages.length;i++) {
-			var handler = getLanguageEventHandler(languages[i]);
-			var element = document.getElementById('set-locale-' + languages[i])
-
-			if (element.addEventListener) {
-				element.addEventListener('click', handler, false);
-			} else if (element.attachEvent) {
-				element.attachEvent('onclick', handler);
-			}
-		}
-	}
-}
-
-if (navigator.language !== undefined) {
-	var locale = navigator.language.split('-')[0];
-	switchLanguage(locale);
-	showFlags()
-}
-</script>
-	</body>
-</html>
