@@ -219,22 +219,74 @@ h2 {
 }</style>
 	</head>
 	<body>
+		<h1 class="title">
+			<span class="en" id="title-en">Not found</span>
+			<span class="de" id="title-de">Nicht gefunden</span>
+			<span class="hu" id="title-hu">Nem található</span>
+		</h1>
 		<div class="errorBody">
 			<div class="errorBox">
+				<div id="locale-flags">
+					<button id="set-locale-en">English</button> | <button id="set-locale-de">Deutsch</button> | <button id="set-locale-hu">Magyar</button>
+				</div>
 				<div class="errorData">
 					<div class="statusCode">404</div>
-					<div class="statusText">Page not found, sorry</div>
+					<div class="statusText">
+						<span class="en">Page not found, sorry</span>
+						<span class="de">Die Seite wurde nicht gefunden</span>
+						<span class="hu">Az oldal nem található</span>
+					</div>
 				</div>
 				<div class="errorDescription">
 					<div class="description">
-						The page you requested was <strong>not found</strong> on our servers.
+						<span class="en">
+							The page you requested was <strong>not found</strong> on our servers.
+						</span>
+						<span class="de">
+							Die gewünschte Seite wurde auf unserem Server <strong>nicht gefunden</strong>.
+						</span>
+						<span class="hu">
+							A kért oldal <strong>nem található</strong> a szerverünkön.
+						</span>
 					</div>
 					<div class="tips todo">
-						<h2>Please follow these steps to get back on track:</h2>
+						<h2>
+							<span class="en">Please follow these steps to get back on track:</span>
+							<span class="de">Bitte versuchen sie folgendes:</span>
+							<span class="hu">Próbálja meg az alábbiakat:</span>
+						</h2>
 						<ul>
-							<li>If you typed the address, please check that you have typed it correctly.</li>
-							<li>Go to our <a href="/">Homepage</a> and try again from there.</li>
-							<li><a href="/" onclick="window.history.back();return false;">Go back</a> to the previous page and try a different link.</li>
+							<li>
+								<span class="en">
+									If you typed the address for this site, check that you typed everything correctly.
+								</span>
+								<span class="de">
+									Wenn sie die Addresse eingetippt haben, kontrollieren sie diese auf Tippfehler.
+								</span>
+								<span class="hu">
+									Ha a címet kézzel adta be, ellenőrizze ezt gépelési hibákra.
+								</span>
+							</li>
+							<li>
+								<span class="en">Go to our <a href="/">Homepage</a> and try again from there.</span>
+								<span class="de">Gehen sie zu unserer <a href="/">Homepage</a> und versuchen sie es
+									von da erneut.</span>
+								<span class="hu">Térjen vissza a <a href="/">kezdőlapra</a> és
+									próbálja újra onnan.</span>
+							</li>
+							<li>
+								<span class="en">
+									<a href="/" onclick="window.history.back();return false;">Go back</a> and try again.
+								</span>
+								<span class="de">
+									<a href="/" onclick="window.history.back();return false;">Gehen sie zurück</a> und
+									versuchen sie es noch einmal.
+								</span>
+								<span class="hu">
+									<a href="/" onclick="window.history.back();return false;">Menjen vissza</a> és
+									próbálja újra.
+								</span>
+							</li>
 						</ul>
 					</div>
 				</div>

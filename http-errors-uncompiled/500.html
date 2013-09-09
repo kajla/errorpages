@@ -6,22 +6,57 @@
 		<link rel="stylesheet" href="style.css" type="text/css" />
 	</head>
 	<body>
+		<h1 class="title">
+			<span class="en" id="title-en">Internal Server Error</span>
+			<span class="de" id="title-de">Interner Serverfehler</span>
+			<span class="hu" id="title-hu">Belső szerverhiba</span>
+		</h1>
 		<div class="errorBody">
 			<div class="errorBox">
+				<div id="locale-flags">
+					<button id="set-locale-en">English</button> | <button id="set-locale-de">Deutsch</button> | <button id="set-locale-hu">Magyar</button>
+				</div>
 				<div class="errorData">
 					<div class="statusCode">500</div>
-					<div class="statusText">An error happened, sorry.</div>
+					<div class="statusText">
+						<span class="en">An error happened, sorry</span>
+						<span class="de">Ein Fehler ist passiert</span>
+						<span class="hu">Hiba történt</span>
+					</div>
 				</div>
 				<div class="errorDescription">
 					<div class="description">
-						Our server has <strong>encountered an error</strong> it can't recover from. Please try to trace back your steps.
-						If the error persist, contact us.
+						<span class="en">Our server has encountered an error it can't recover from. Please try to trace back your steps. If the error persists, contact us.</span>
+						<span class="de">Unser Server ist während der Verarbeitung auf einen Fehler gestoßen. Bitte versuchen sie ihre Schritte rückzuverfolgen. Wenn der Fehler weiterhin besteht, wenden sie sich bitte an uns.</span>
+						<span class="hu">Az egyik szerverünk hibára futott. Próbálja meg visszakövetni a lépéseit. Ha továbbra is fennáll a hiba, értesítsen minket.</span>
 					</div>
 					<div class="tips todo">
-						<h2>Please follow these steps to get back on track:</h2>
+						<h2>
+							<span class="en">Please follow these steps to get back on track:</span>
+							<span class="de">Bitte versuchen sie folgendes:</span>
+							<span class="hu">Próbálja meg az alábbiakat:</span>
+						</h2>
 						<ul>
-							<li><a href="/" onclick="window.history.back();return false;">Go back</a> and try again.</li>
-							<li>Go to our <a href="/">Homepage</a> and try again from there.</li>
+							<li>
+								<span class="en">
+									<a href="/" onclick="window.history.back();return false;">Go back</a> and try again.
+								</span>
+								<span class="de">
+									<a href="/" onclick="window.history.back();return false;">Gehen sie zurück</a> und
+									versuchen sie es noch einmal.
+								</span>
+								<span class="hu">
+									<a href="/" onclick="window.history.back();return false;">Menjen vissza</a> és
+									próbálja újra.
+								</span>
+							</li>
+							<li>
+								<span class="en">Go to our <a href="/">Homepage</a> and try again from there.</span>
+								<span class="de">Gehen sie zu unserer <a href="/">Homepage</a> und versuchen sie es
+									von da erneut.</span>
+								<span class="hu">Térjen vissza a <a href="/">kezdőlapra</a> és
+									próbálja újra onnan.</span>
+							</li>
 						</ul>
 					</div>
 				</div>

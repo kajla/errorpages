@@ -219,23 +219,62 @@ h2 {
 }</style>
 	</head>
 	<body>
+		<h1 class="title">
+			<span class="en" id="title-en">Bad Gateway</span>
+			<span class="de" id="title-de">Gateway Fehler</span>
+			<span class="hu" id="title-hu">Átjáró hiba</span>
+		</h1>
 		<div class="errorBody">
 			<div class="errorBox">
+				<div id="locale-flags">
+					<button id="set-locale-en">English</button> | <button id="set-locale-de">Deutsch</button> | <button id="set-locale-hu">Magyar</button>
+				</div>
 				<div class="errorData">
 					<div class="statusCode">502</div>
-					<div class="statusText">Background Error</div>
+					<div class="statusText">
+						<span class="en">Background Error</span>
+						<span class="de">Hintergrundfehler</span>
+						<span class="hu">Háttérkiszolgáló hiba</span>
+					</div>
 				</div>
 				<div class="errorDescription">
 					<div class="description">
-						We are not able to process your request because our server has <strong>encountered an
-						error</strong> in one of our background servers.
+						<span class="en">We are not able to process your request because our server has encountered an error in one of our background servers.</span>
+						<span class="de">Wir können ihre Anfrage nicht bearbeiten weil einer unserer Hintergrundserver auf einen Fehler gelaufen ist.</span>
+						<span class="hu">Az egyik háttérkiszolgáló hibára futott, ezért a lekérdezését nem tudjuk teljesíteni.</span>
 					</div>
 					<div class="tips todo">
-						<h2>Please follow these steps to get back on track:</h2>
+						<h2>
+							<span class="en">Please follow these steps to get back on track:</span>
+							<span class="de">Bitte versuchen sie folgendes:</span>
+							<span class="hu">Próbálja meg az alábbiakat:</span>
+						</h2>
 						<ul>
-							<li><a href="/" onclick="window.history.back();return false;">Go back</a> and try again.</li>
-							<li>Go to our <a href="/">Homepage</a> and try again from there.</li>
-							<li>Try again later.</li>
+							<li>
+								<span class="en">
+									<a href="/" onclick="window.history.back();return false;">Go back</a> and try again.
+								</span>
+								<span class="de">
+									<a href="/" onclick="window.history.back();return false;">Gehen sie zurück</a> und
+									versuchen sie es noch einmal.
+								</span>
+								<span class="hu">
+									<a href="/" onclick="window.history.back();return false;">Menjen vissza</a> és
+									próbálja újra.
+								</span>
+							</li>
+							<li>
+								<span class="en">Go to our <a href="/">Homepage</a> and try again from there.</span>
+								<span class="de">Gehen sie zu unserer <a href="/">Homepage</a> und versuchen sie es
+									von da erneut.</span>
+								<span class="hu">Térjen vissza a <a href="/">kezdőlapra</a> és
+									próbálja újra onnan.</span>
+							</li>
+							<li>
+								<span class="en">Try again at a later time.</span>
+								<span class="de">Versuchen sie es später erneut.</span>
+								<span class="hu">Próbálja újra később.</span>
+							</li>
 						</ul>
 					</div>
 				</div>
