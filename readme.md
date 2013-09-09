@@ -37,6 +37,6 @@
         root  /your/errorpages/repo/root;
     }
 
-## nginx
+## License
 
 Public domain. 'nuff said.
