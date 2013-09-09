@@ -2,7 +2,7 @@
 
 ## Apache HTTPd
 
-    Alias /http-errors /your/http/errors/directory
+    Alias /http-errors /your/errorpages/repo/root/http-errors
     ErrorDocument 400 /http-errors/400.html
     ErrorDocument 401 /http-errors/401.html
     ErrorDocument 403 /http-errors/403.html
@@ -30,7 +30,6 @@
     error_page 500 /http-errors/500.html;
     location ^~ /http-errors/ {
         internal;
-        root  /your/http/errors/directory;
-        allow all;
+        root  /your/errorpages/repo/root;
     }
 
