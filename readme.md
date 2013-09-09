@@ -1,4 +1,4 @@
-# Nice HTML error pages for your webserver
+# Nice error pages for your webserver
 
 The goal of this project is to give you (the server operator) a drop in solution for user friendly error pages. No more
 excuses for lame black and white error pages.
@@ -39,6 +39,10 @@ excuses for lame black and white error pages.
         internal;
         root  /your/errorpages/repo/root;
     }
+
+## LigHTTPd
+
+    server.errorfile-prefix = "/your/errorpages/repo/root/http-errors/"
 
 ## License
 
