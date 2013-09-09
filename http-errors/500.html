@@ -198,7 +198,8 @@ h2 {
 	display:inline;
 }
 .locale-en .de,
-.locale-en .hu {
+.locale-en .hu,
+.locale-en .ru {
 	display:none;
 }
 
@@ -206,7 +207,8 @@ h2 {
 	display:inline;
 }
 .locale-de .en,
-.locale-de .hu {
+.locale-de .hu,
+.locale-de .ru {
 	display:none;
 }
 
@@ -214,20 +216,32 @@ h2 {
 	display:inline;
 }
 .locale-hu .en,
-.locale-hu .de {
+.locale-hu .de,
+.locale-hu .ru{
 	display:none;
-}</style>
+}
+
+.locale-ru .ru {
+	display:inline;
+}
+.locale-ru .de,
+.locale-ru .hu,
+.locale-ru .en {
+	display:none;
+}
+</style>
 	</head>
 	<body>
 		<h1 class="title">
 			<span class="en" id="title-en">Internal Server Error</span>
 			<span class="de" id="title-de">Interner Serverfehler</span>
 			<span class="hu" id="title-hu">Belső szerverhiba</span>
+			<span class="ru" id="title-ru">Ошибка сервера Интернет</span>
 		</h1>
 		<div class="errorBody">
 			<div class="errorBox">
 				<div id="locale-flags">
-					<button id="set-locale-en">English</button> | <button id="set-locale-de">Deutsch</button> | <button id="set-locale-hu">Magyar</button>
+					<button id="set-locale-en">English</button> | <button id="set-locale-de">Deutsch</button> | <button id="set-locale-ru">Русский</button> | <button id="set-locale-hu">Magyar</button>
 				</div>
 				<div class="errorData">
 					<div class="statusCode">500</div>
@@ -235,6 +249,7 @@ h2 {
 						<span class="en">An error happened, sorry</span>
 						<span class="de">Ein Fehler ist passiert</span>
 						<span class="hu">Hiba történt</span>
+						<span class="ru">Произошла ошибка</span>
 					</div>
 				</div>
 				<div class="errorDescription">
@@ -242,12 +257,14 @@ h2 {
 						<span class="en">Our server has encountered an error it can't recover from. Please try to trace back your steps. If the error persists, contact us.</span>
 						<span class="de">Unser Server ist während der Verarbeitung auf einen Fehler gestoßen. Bitte versuchen sie ihre Schritte rückzuverfolgen. Wenn der Fehler weiterhin besteht, wenden sie sich bitte an uns.</span>
 						<span class="hu">Az egyik szerverünk hibára futott. Próbálja meg visszakövetni a lépéseit. Ha továbbra is fennáll a hiba, értesítsen minket.</span>
+						<span class="ru">Наш сервер столкнулся с ошибкой, невозможной для исправления. Пожалуйста, попытайтесь отследить Ваши действия. Если ошибка повторится, свяжитесь с нами.</span>
 					</div>
 					<div class="tips todo">
 						<h2>
 							<span class="en">Please follow these steps to get back on track:</span>
 							<span class="de">Bitte versuchen sie folgendes:</span>
 							<span class="hu">Próbálja meg az alábbiakat:</span>
+							<span class="ru">Пожалуйста, следуйте данным указаниям для возвращения в обычный режим:</span>
 						</h2>
 						<ul>
 							<li>
@@ -262,6 +279,9 @@ h2 {
 									<a href="/" onclick="window.history.back();return false;">Menjen vissza</a> és
 									próbálja újra.
 								</span>
+								<span class="ru">
+									<a href="/" onclick="window.history.back();return false;">Вернитесь</a> и попытайтесь снова
+								</span>
 							</li>
 							<li>
 								<span class="en">Go to our <a href="/">Homepage</a> and try again from there.</span>
@@ -269,13 +289,14 @@ h2 {
 									von da erneut.</span>
 								<span class="hu">Térjen vissza a <a href="/">kezdőlapra</a> és
 									próbálja újra onnan.</span>
+								<span class="ru">Вернитесь на <a href="/">домашнюю страницу</a> и попытайтесь снова оттуда.</span>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript">var languages = ['en', 'de', 'hu'];
+		<script type="text/javascript">var languages = ['en', 'de', 'hu', 'ru'];
 
 function switchLanguage(language) {
 	if (languages.indexOf(language) !== false) {

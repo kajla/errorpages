@@ -10,11 +10,12 @@
 			<span class="en" id="title-en">Request Timeout</span>
 			<span class="de" id="title-de">Zeitüberschreitung</span>
 			<span class="hu" id="title-hu">Időtúllépés</span>
+			<span class="ru" id="title-ru">Истекло время ожидания</span>
 		</h1>
 		<div class="errorBody">
 			<div class="errorBox">
 				<div id="locale-flags">
-					<button id="set-locale-en">English</button> | <button id="set-locale-de">Deutsch</button> | <button id="set-locale-hu">Magyar</button>
+					<button id="set-locale-en">English</button> | <button id="set-locale-de">Deutsch</button> | <button id="set-locale-ru">Русский</button> | <button id="set-locale-hu">Magyar</button>
 				</div>
 				<div class="errorData">
 					<div class="statusCode">408</div>
@@ -22,6 +23,7 @@
 						<span class="en">Too slow, sorry</span>
 						<span class="de">Zu langsam!</span>
 						<span class="hu">Túl lassú!</span>
+						<span class="ru">Слишком медленно</span>
 					</div>
 				</div>
 				<div class="errorDescription">
@@ -35,29 +37,36 @@
 						<span class="hu">
 							A böngészője túl lassú volt a lekérdezés közben. Kérem, próbálja meg az alábbi lépéseket a probléma orvoslása érdekében.
 						</span>
+						<span class="ru">
+							Ваш браузер посылает запрос слишком медленно. Пожалуйста, просмотрите список ниже для решения Вашей проблемы.
+						</span>
 					</div>
 					<div class="tips todo">
 						<h2>
 							<span class="en">Please follow these steps to get back on track:</span>
 							<span class="de">Bitte versuchen sie folgendes:</span>
 							<span class="hu">Próbálja meg az alábbiakat:</span>
+							<span class="ru">Пожалуйста, следуйте данным указаниям для возвращения в обычный режим:</span>
 						</h2>
 						<ul>
 							<li>
 								<span class="en">Check your <a href="http://www.speedtest.net/">Internet Connection speed</a>.</span>
 								<span class="de">Kontrollieren sie ihre <a href="http://www.speedtest.net/">Internetgeschwindigkeit</a>.</span>
 								<span class="hu">Ellenőrizze az <a href="http://www.speedtest.net/">internet sebességét</a>.</span>
+								<span class="ru"><a href="http://www.speedtest.net/">Проверьте скорость работы сети Интернет.</a></span>
 							</li>
 							<li>
 								<span class="en">Contact your internet provider and ask if they are performing maintenance.</span>
 								<span class="de">Kontaktieren sie ihren Internetdienstleister und fragen sie nach ob Wartungsarbeiten zu Gange sind.</span>
 								<span class="hu">Lépjen kapcsolatba az internet szolgáltatójával és érdeklődjön esetleges karbantartás után.</span>
+								<span class="ru">Свяжитесь с Вашим Интернет провайдером по вопросам технического обслуживания.</span>
 							</li>
 							<li>
-								<a href="" onclick="javascript:window.location.reload();return false;">
+								<a href="" onclick="window.location.reload();return false;">
 									<span class="en">Refresh this page.</span>
 									<span class="de">Laden sie die Seite neu.</span>
 									<span class="hu">Töltse újra az oldalt!</span>
+									<span class="ru">Обновить страницу</span>
 								</a>
 							</li>
 							<li>
@@ -72,6 +81,9 @@
 									<a href="/" onclick="window.history.back();return false;">Menjen vissza</a> és
 									próbálja újra.
 								</span>
+								<span class="ru">
+									<a href="/" onclick="window.history.back();return false;">Вернитесь</a> и попытайтесь снова
+								</span>
 							</li>
 							<li>
 								<span class="en">Go to our <a href="/">Homepage</a> and try again from there.</span>
@@ -79,11 +91,13 @@
 									von da erneut.</span>
 								<span class="hu">Térjen vissza a <a href="/">kezdőlapra</a> és
 									próbálja újra onnan.</span>
+								<span class="ru">Вернитесь на <a href="/">домашнюю страницу</a> и попытайтесь снова оттуда.</span>
 							</li>
 							<li>
 								<span class="en">Try again at a later time.</span>
 								<span class="de">Versuchen sie es später erneut.</span>
 								<span class="hu">Próbálja újra később.</span>
+								<span class="ru">Попытайтесь снова позже.</span>
 							</li>
 						</ul>
 					</div>

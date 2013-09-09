@@ -57,3 +57,7 @@ Public domain. For the countries/legislations where there's no public domain, an
 ### Hungarian, German and English texts
 
 * Janos Pasztor
+
+### Russian texts
+
+* D. Solomatina
