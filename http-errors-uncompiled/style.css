@@ -193,7 +193,8 @@ h2 {
 	display:inline;
 }
 .locale-en .de,
-.locale-en .hu {
+.locale-en .hu,
+.locale-en .ru {
 	display:none;
 }
 
@@ -201,7 +202,8 @@ h2 {
 	display:inline;
 }
 .locale-de .en,
-.locale-de .hu {
+.locale-de .hu,
+.locale-de .ru {
 	display:none;
 }
 
@@ -209,6 +211,16 @@ h2 {
 	display:inline;
 }
 .locale-hu .en,
-.locale-hu .de {
+.locale-hu .de,
+.locale-hu .ru{
+	display:none;
+}
+
+.locale-ru .ru {
+	display:inline;
+}
+.locale-ru .de,
+.locale-ru .hu,
+.locale-ru .en {
 	display:none;
 }

@@ -1,4 +1,4 @@
-var languages = ['en', 'de', 'hu'];
+var languages = ['en', 'de', 'hu', 'ru'];
 
 function switchLanguage(language) {
 	if (languages.indexOf(language) !== false) {
