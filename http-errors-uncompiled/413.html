@@ -6,23 +6,67 @@
 		<link rel="stylesheet" href="style.css" type="text/css" />
 	</head>
 	<body>
+		<h1 class="title">
+			<span class="en" id="title-en">Request Entity Too Large</span>
+			<span class="de" id="title-de">Anfrage zu groß</span>
+			<span class="hu" id="title-hu">A lekérdezés túl nagy</span>
+		</h1>
 		<div class="errorBody">
 			<div class="errorBox">
+				<div id="locale-flags">
+					<button id="set-locale-en">English</button> | <button id="set-locale-de">Deutsch</button> | <button id="set-locale-hu">Magyar</button>
+				</div>
 				<div class="errorData">
 					<div class="statusCode">413</div>
-					<div class="statusText">Too big!</div>
+					<div class="statusText">
+						<span class="en">Too big!</span>
+						<span class="de">Zu groß!</span>
+						<span class="hu">Túl nagy!</span>
+					</div>
 				</div>
 				<div class="errorDescription">
 					<div class="description">
-						Your browser sent us a waaaaay <strong>too large request</strong> which we couldn't process.
+						<span class="en">Your browser sent us a waaaaay <strong>too large request</strong> which we couldn't process.</span>
+						<span class="de">Ihr Browser hat uns eine viiiiel <strong>zu große Anfrage</strong> geschickt die wir nicht verarbeiten konnten.</span>
+						<span class="hu">A böngészője túl nagy lekérdezést küldött.</span>
 					</div>
 					<div class="tips todo">
-						<h2>Please follow these steps to get back on track:</h2>
+						<h2>
+							<span class="en">Please follow these steps to get back on track:</span>
+							<span class="de">Bitte versuchen sie folgendes:</span>
+							<span class="hu">Próbálja meg az alábbiakat:</span>
+						</h2>
 						<ul>
-							<li>Clear the cookies in your browser for this site.</li>
-							<li>Check for any <strong>updates</strong> for your browser.</li>
-							<li><a href="/" onclick="window.history.back();return false;">Go back</a> and try again.</li>
-							<li>Go to our <a href="/">Homepage</a> and try again from there.</li>
+							<li>
+								<span class="en">Clear the cookies in your browser for this site.</span>
+								<span class="de">Löschen sie die Cookies in ihrem Browser</span>
+								<span class="hu">Törölje a sütiket a böngészőjében!</span>
+							</li>
+							<li>
+								<span class="en">Check for any updates for your browser.</span>
+								<span class="de">Laden sie eine neuere Version ihres Browsers runter.</span>
+								<span class="hu">Frissítse a böngészőjét a legfrissebb verzióra.</span>
+							</li>
+							<li>
+								<span class="en">
+									<a href="/" onclick="window.history.back();return false;">Go back</a> and try again.
+								</span>
+								<span class="de">
+									<a href="/" onclick="window.history.back();return false;">Gehen sie zurück</a> und
+									versuchen sie es noch einmal.
+								</span>
+								<span class="hu">
+									<a href="/" onclick="window.history.back();return false;">Menjen vissza</a> és
+									próbálja újra.
+								</span>
+							</li>
+							<li>
+								<span class="en">Go to our <a href="/">Homepage</a> and try again from there.</span>
+								<span class="de">Gehen sie zu unserer <a href="/">Homepage</a> und versuchen sie es
+									von da erneut.</span>
+								<span class="hu">Térjen vissza a <a href="/">kezdőlapra</a> és
+									próbálja újra onnan.</span>
+							</li>
 						</ul>
 					</div>
 				</div>

@@ -1,4 +1,7 @@
-# Nice HTML error pages for your webserver
+# Nice error pages for your webserver
+
+The goal of this project is to give you (the server operator) a drop in solution for user friendly error pages. No more
+excuses for lame black and white error pages.
 
 ## Demo
 
@@ -37,6 +40,20 @@
         root  /your/errorpages/repo/root;
     }
 
-## nginx
+## LigHTTPd
 
-Public domain. 'nuff said.
+    server.errorfile-prefix = "/your/errorpages/repo/root/http-errors/"
+
+## License
+
+Public domain. For the countries/legislations where there's no public domain, an appropriate license is provided.
+
+## Credits
+
+### Code
+
+* Janos Pasztor
+
+### Hungarian, German and English texts
+
+* Janos Pasztor

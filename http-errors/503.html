@@ -219,23 +219,52 @@ h2 {
 }</style>
 	</head>
 	<body>
+		<h1 class="title">
+			<span class="en" id="title-en">Maintenance</span>
+			<span class="de" id="title-de">Wartungsarbeiten</span>
+			<span class="hu" id="title-hu">Karbantartás</span>
+		</h1>
 		<div class="errorBody">
 			<div class="errorBox">
+				<div id="locale-flags">
+					<button id="set-locale-en">English</button> | <button id="set-locale-de">Deutsch</button> | <button id="set-locale-hu">Magyar</button>
+				</div>
 				<div class="errorData">
 					<div class="statusCode">503</div>
-					<div class="statusText">We are performing maintenance</div>
+					<div class="statusText">
+						<span class="en">Maintenance</span>
+						<span class="de">Wartungsarbeiten</span>
+						<span class="hu">Karbantartás</span>
+					</div>
 				</div>
 				<div class="errorDescription">
 					<div class="description">
-						Our servers need love too, so we are performing <strong>scheduled maintenance</strong> at the
-						moment. Please come back in a little while.
+						<span class="en">Our servers need love too, so we are performing scheduled maintenance at the moment. Please come back in a little while.</span>
+						<span class="de">Unsere Server brauchen auch liebe, deshalb unternehmen wir grade Wartungsarbeiten. Bitte schauen sie in ein paar Minuten wieder zurück.</span>
+						<span class="hu">A szervereknek is kell a szeretet, ezért jelenleg karbantartást végzünk. Nézzen vissza pár perc múlva.</span>
 					</div>
 					<div class="tips todo">
-						<h2>Please follow these steps to get back on track:</h2>
+						<h2>
+							<span class="en">Please follow these steps to get back on track:</span>
+							<span class="de">Bitte versuchen sie folgendes:</span>
+							<span class="hu">Próbálja meg az alábbiakat:</span>
+						</h2>
 						<ul>
-							<li>Grab a cup of coffee.</li>
-							<li>Read a (paper) newspaper.</li>
-							<li><a href="" onclick="window.location.reload();return false;">Refresh this page</a>, maybe we're done already.</li>
+							<li>
+								<span class="en">Grab a cup of coffee.</span>
+								<span class="de">Holen sie sich einen Kaffee.</span>
+								<span class="hu">Igyon egy kávét.</span>
+							</li>
+							<li>
+								<span class="en">Read a (paper) newspaper.</span>
+								<span class="de">Lesen sie eine Zeitung</span>
+								<span class="hu">Olvasson egy újságot.</span>
+							</li>
+							<li>
+								<span class="en"><a href="" onclick="window.location.reload();return false;">Refresh this page</a>, maybe we're done already.</span>
+								<span class="de"><a href="" onclick="window.location.reload();return false;">Laden sie die Seite neu</a>, vieleicht sind wir schon fertig.</span>
+								<span class="hu"><a href="" onclick="window.location.reload();return false;">Frissítse az oldalt</a>, hátha már készen vagyunk.</span>
+							</li>
 						</ul>
 					</div>
 				</div>
