@@ -1,4 +1,10 @@
-This project is released unter public domain, you are free to use it for whatever purpose you want.
-Credits are appreciated.
+              DO WHAT YOU WANT TO PUBLIC LICENSE
+                    Version 1, September 2013
 
-For the countries/legislations where there's no public domain, use the WTFPL license.
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed.
+
+                 DO WHAT YOU WANT TO PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT YOU WANT TO.

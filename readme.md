@@ -1,7 +1,7 @@
 # Nice HTML error pages for your webserver
 
 The goal of this project is to give you (the server operator) a drop in solution for user friendly error pages. No more
-excuses for lame
+excuses for lame black and white error pages.
 
 ## Demo
 
@@ -42,7 +42,7 @@ excuses for lame
 
 ## License
 
-Public domain. For the countries/legislations where there's no public domain, use the WTFPL license.
+Public domain. For the countries/legislations where there's no public domain, an appropriate license is provided.
 
 ## Credits
 
