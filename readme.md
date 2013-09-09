@@ -40,3 +40,13 @@
 ## License
 
 Public domain. 'nuff said.
+
+## Credits
+
+### Code
+
+* Janos Pasztor
+
+### Hungarian, German and English texts
+
+* Janos Pasztor
