@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8" />
 		<title>Unauthorized</title>
 		<link rel="stylesheet" href="style.css" type="text/css" />
 	</head>
 	<body>
+		<h1 class="title">
+			<span class="en" id="title-en">Unauthorized</span>
+			<span class="de" id="title-de">Passwort erforderlich</span>
+			<span class="hu" id="title-hu">Jelszó szükséges</span>
+		</h1>
 		<div class="errorBody">
 			<div class="errorBox">
 				<div id="locale-flags">
@@ -12,20 +18,74 @@
 				</div>
 				<div class="errorData">
 					<div class="statusCode">401</div>
-					<div class="statusText">Please enter a password</div>
+					<div class="statusText">
+						<span class="en">Please enter a password</span>
+						<span class="de">Bitte Passwort angeben</span>
+						<span class="hu">Kérem, adjon meg jelszót</span>
+					</div>
 				</div>
 				<div class="errorDescription">
 					<div class="description">
-						To view this site, you must <strong>enter a password</strong>. Please
-						<a href="" onclick="window.location.reload();return false;">refresh this page</a> and
-						enter your credentials in the window presented.
+						<span class="en">
+							To view this site, you must <strong>enter a password</strong>. Please
+							<a href="" onclick="window.location.reload();return false;">refresh this page</a> and
+							enter your credentials in the window presented.
+						</span>
+						<span class="de">
+							Zum ansehen dieser Seite müssen sie ein <strong>passwort eingeben</strong>. Bitte
+							<a href="" onclick="window.location.reload();return false;">laden sie die Seite neu</a>
+							und geben sie ihre Zugangsdaten ein.
+						</span>
+						<span class="hu">
+							Az oldal megtekintéséhez <strong>meg kell adnia a jelszavát</strong>.
+							<a href="" onclick="window.location.reload();return false;">Frissítse az oldalt</a> és
+							adja meg hozzáférési adatait!
+						</span>
 					</div>
 					<div class="tips todo">
-						<h2>Please follow these steps to get back on track:</h2>
+						<h2>
+							<span class="en">Please follow these steps to get back on track:</span>
+							<span class="de">Bitte versuchen sie folgendes:</span>
+							<span class="hu">Próbálja meg az alábbiakat:</span>
+						</h2>
 						<ul>
-							<li><a href="" onclick="javascript:window.location.reload();return false;">Refresh this page</a> and enter your password</li>
-							<li><a href="/" onclick="window.history.back();return false;">Go back</a> and try again.</li>
-							<li>Go to our <a href="/">Homepage</a> and try again from there.</li>
+							<li>
+								<span class="en">
+									<a href="" onclick="window.location.reload();return false;">Refresh this page</a> and enter your password
+								</span>
+								<span class="de">
+									<a href="" onclick="window.location.reload();return false;">Laden sie die Seite
+										neu</a> und geben sie ihr Passwort ein.
+								</span>
+								<span class="hu">
+									<a href="" onclick="window.location.reload();return false;">Töltse újra az
+										oldalt</a> és adja meg jelszavát!
+								</span>
+							</li>
+							<li>
+								<span class="en">
+									<a href="/" onclick="window.history.back();return false;">Go back</a> and try again.
+								</span>
+								<span class="de">
+									<a href="/" onclick="window.history.back();return false;">Kehren sie auf die
+										letzte Seite zurück</a> und versuchen sie es erneut.
+								</span>
+								<span class="hu">
+									<a href="/" onclick="window.history.back();return false;">Térjen vissza az előző
+									oldalra</a> és próbálja újra.
+								</span>
+							</li>
+							<li>
+								<span class="en">
+									Go to our <a href="/">Homepage</a> and try again from there.
+								</span>
+								<span class="de">
+									Kehren sei auf die <a href="/">Startseite zurück</a> und versuchen sie es von dort.
+								</span>
+								<span class="hu">
+									Térjen vissza a <a href="/">nyitólapra</a> és próbálja újra onnan.
+								</span>
+							</li>
 						</ul>
 					</div>
 				</div>
