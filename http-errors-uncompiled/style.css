@@ -178,7 +178,7 @@ h2 {
 	content: "\00BB\00A0";
 }
 
-.de, .hu {
+.de, .hu, .ru {
 	display:none;
 }
 
