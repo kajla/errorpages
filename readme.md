@@ -44,6 +44,12 @@ excuses for lame black and white error pages.
 
     server.errorfile-prefix = "/your/errorpages/repo/root/http-errors/"
 
+## Help us out
+
+We need your help! If you have a few minutes and do speak languages, please add some translations here:
+
+https://docs.google.com/spreadsheet/ccc?key=0Ajx7jZMYOdDHdHQzWjJ4dmNSTmhfWWRRWWVkOFFzeHc#gid=0
+
 ## License
 
 Public domain. For the countries/legislations where there's no public domain, an appropriate license is provided.
