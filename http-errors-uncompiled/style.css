@@ -79,7 +79,7 @@ a {
 	width:490px;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 980px) {
 	.errorBody {
 		padding-top:0;
 	}
@@ -87,7 +87,7 @@ a {
 	.errorBox {
 		width:auto;
 		height:auto;
-		margin:20px;
+		margin:10px;
 	}
 
 	.statusCode {
