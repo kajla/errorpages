@@ -42,5 +42,5 @@ function showFlags() {
 if (navigator.language) {
 	var locale = navigator.language.split('-')[0];
 	switchLanguage(locale);
-	showFlags()
+	showFlags();
 }
