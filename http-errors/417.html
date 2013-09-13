@@ -355,7 +355,7 @@ function showFlags() {
 		document.getElementById('locale-flags').style.display='block';
 		for (var i=0; i<languages.length;i++) {
 			var handler = getLanguageEventHandler(languages[i]);
-			var element = document.getElementById('set-locale-' + languages[i])
+			var element = document.getElementById('set-locale-' + languages[i]);
 
 			if (element.addEventListener) {
 				element.addEventListener('click', handler, false);
@@ -366,7 +366,7 @@ function showFlags() {
 	}
 }
 
-if (navigator.language !== undefined) {
+if (navigator.language) {
 	var locale = navigator.language.split('-')[0];
 	switchLanguage(locale);
 	showFlags()
