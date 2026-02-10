@@ -5,7 +5,7 @@ excuses for lame black and white error pages.
 
 ## Demo
 
-* [http://github.janoszen.com/errorpages/http-errors/](https://kajla.github.io/errorpages/http-errors/)
+* [http://kajla.github.io/errorpages/http-errors/](https://kajla.github.io/errorpages/http-errors/)
 
 ## Apache HTTPd
 
